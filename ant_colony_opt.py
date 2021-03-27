@@ -66,14 +66,14 @@ class AntColonyOPT(object):
         pheromone_props = pow(pheromone,self.alpha_rate)
         moves = np.random.choice(range(self.n_cities), 1, p=(pheromone_props / pheromone_props.sum()))
         return moves[0]
-        
-distances = np.array([[np.inf, 33, 25, 13, 7, 13],
-                      [33, np.inf, 14, 11, 12, 32],
+diag= np.inf       
+distances = np.array([[diag, 33, 25, 13, 7, 13],
+                      [33, diag, 14, 11, 12, 32],
                       
-                      [25, 14, np.inf, 10, 24, 10],
-                      [13, 11, 10, np.inf, 28, 18],
-                      [7, 12, 24, 28, np.inf, 11],
-                      [13, 32, 10, 18, 11,np.inf]])
+                      [25, 14, diag, 10, 24, 10],
+                      [13, 11, 10, diag, 28, 18],
+                      [7, 12, 24, 28, diag, 11],
+                      [13, 32, 10, 18, 11,diag]])
                       
 colony_size=100
 rounds=50 
