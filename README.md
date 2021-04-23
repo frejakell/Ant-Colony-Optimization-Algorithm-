@@ -12,3 +12,4 @@ In nature, Ants will use phemone trails in order to signal the best route from t
 This concept can easily be applied to graph based problems. The code in this project attempts to find the shortest path through a graph which visits each node once along the way 
 before returning to the original start node. 
 
+The code consist of a primary class called _ AntColonyOPT_
